@@ -29,7 +29,7 @@ Very nice looking view pager library.
 ### MaterialDrawer
 An awesome drawer library to offer a Google like drawer.
 ### ObservableScrollView
-Realize parallex toolbar effect.
+Realize parallax toolbar effect with the image view below it.
 ### ConvenientBanner
 Easy banner.
 ### AndroidIconic
