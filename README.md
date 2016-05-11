@@ -12,13 +12,13 @@ Here are some GIFs:
 There are two tabs, one tab to show movies and another tab to show wallpapers. Click the movie to show more information and click wallpaper to open full screen dialog which supports gesture enlarge and action to store.
 
 ## APIs
-Two web APIs are used in this app, namely TMDB (The movie database) and wallpaper up. Their API keys are stored in strings.xml and removed before uploading.
+Two web APIs are used in this app, namely TMDB (The movie database) and Abyss wallpaper. Their API keys are stored in strings.xml and removed before uploading.
 If you want to run this app, please replace with your own API keys.
 
 ## Libraries Used
 ### RxJava+RxAndroid
 Use this library to perform responsive actions and execute time-consuming tasks in io thread.
-### Retrofit
+### Retrofit+OkHttp3
 A powerful library along with RxJava to GET and convert response automatically.
 ### Glide
 Load url images easily.
