@@ -8,7 +8,7 @@ Here are some GIFs:
 ![](https://raw.githubusercontent.com/akak19193/UI_Collections/master/gifs/sample5.gif)
 ![](https://raw.githubusercontent.com/akak19193/UI_Collections/master/gifs/sample6.gif)
 
-## Breif Explanation
+## Brief Explanation
 There are two tabs, one tab to show movies and another tab to show wallpapers. Click the movie to show more information and click wallpaper to open full screen dialog which supports gesture enlarge and action to store.
 
 ## APIs
@@ -36,3 +36,5 @@ Easy banner.
 Easy access to icon font everywhere.
 ### ViewPagerTransforms
 Tens of transform effects for view pager (and also the banner).
+### GestureImage
+Easy image to support gesture zooming.
