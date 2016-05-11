@@ -95,15 +95,18 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public Fragment getItem(int position) {
-                switch (position % 3) {
-                    default:
+                switch (position % 2) {
+                    case 0:
                         return MovieFragment.newInstance();
+
+                    default:
+                        return  WallpaperFragment.newInstance();
                 }
             }
 
             @Override
             public int getCount() {
-                return 3;
+                return 2;
             }
 
             @Override
@@ -116,13 +119,9 @@ public class HomeActivity extends AppCompatActivity {
                         new IconicsDrawable(getApplicationContext())
                                 .icon(GoogleMaterial.Icon.gmd_wallpaper)
                                 .color(getResources().getColor(R.color.md_white_1000))
-                                .sizeDp(24),
-                        new IconicsDrawable(getApplicationContext())
-                                .icon(GoogleMaterial.Icon.gmd_games)
-                                .color(getResources().getColor(R.color.md_white_1000))
-                                .sizeDp(24),
+                                .sizeDp(24)
                 };
-                String[] title = {"Movie", "Wallpaper", "Game"};
+                String[] title = {"Movie", "Wallpaper"};
                 Drawable mIcon = icons[position];
                 mIcon.setBounds(0, 0, mIcon.getIntrinsicWidth(), mIcon.getIntrinsicHeight());
                 SpannableString sb = new SpannableString("    "+title[position]);
@@ -146,11 +145,6 @@ public class HomeActivity extends AppCompatActivity {
 //                                R.color.blue,
 //                                "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/06/wallpaper_51.jpg");
                         return HeaderDesign.fromColorAndDrawable(getResources().getColor(R.color.cyan), getResources().getDrawable(R.drawable.wallpaper));
-                    case 2:
-//                        return HeaderDesign.fromColorResAndUrl(
-//                                R.color.cyan,
-//                                "http://www.droid-life.com/wp-content/uploads/2014/10/lollipop-wallpapers10.jpg");
-                        return HeaderDesign.fromColorAndDrawable(getResources().getColor(R.color.orange), getResources().getDrawable(R.drawable.game));
                 }
 
                 //execute others actions if needed (ex : modify your header logo)

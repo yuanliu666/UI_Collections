@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UI_Collections</string>
-</resources>
+    <string name="TMDb_APIkey">apikey</string>
+    <string name="wallpaperup_APIkey">apikey</string>
+    </resources>

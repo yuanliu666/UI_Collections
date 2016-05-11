@@ -8,8 +8,8 @@ android {
         applicationId "app.com.uicollections.android.ui_collections"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1.1"
     }
     buildTypes {
         release {
@@ -17,6 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+}
+repositories {
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
 }
 
 dependencies {
@@ -33,4 +41,21 @@ dependencies {
         compile 'com.mikepenz:iconics-core:2.5.11@aar'
     }
     compile 'com.mikepenz:google-material-typeface:2.2.0.1.original@aar'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.0.1'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxjava-math:1.0.0'
+    compile 'io.reactivex:rxjava-math:1.0.0'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:23+'
+    compile 'org.greenrobot:greendao:2.2.0'
+    compile 'com.alexvasilkov:gesture-views:2.1.1'
 }
